@@ -43,6 +43,14 @@ const StyledButton = styled.button`
         background: ${palette.orange[4]};
       }
     `}
+  ${(props) =>
+    props.red &&
+    css`
+      background: ${palette.red[8]};
+      &:hover {
+        background: ${palette.red[5]};
+      }
+    `}
 `;
 
 const Button = (props) => <StyledButton {...props} />;
